@@ -99,8 +99,14 @@ if st.session_state.done_btn_key == True:
                 "min_value": input_matrix.min(),
                 "average": input_matrix.mean(),
                 "order": input_matrix.shape,
-                "squarred_matrix": input_matrix**2,
-                "transpose": input_matrix.transpose()
+                "determinant": np.linalg.det(input_matrix),
+                "inverse": np.linalg.inv(input_matrix),
+                "norm": np.linalg.norm(input_matrix),
+                "trace": np.linalg.trace(input_matrix),
+                # results in the form of matrix
+                "squarred_matrix": input_matrix @ input_matrix,
+                "transpose": input_matrix.transpose(),
+                "element_squarred_matrix": input_matrix ** 2
             }
 
             st.write(f"## :green[Basic Information] \
@@ -115,6 +121,9 @@ if st.session_state.done_btn_key == True:
 
             st.write(f"## :green[Square of matrix: ]")
             st.write(analysis_report.get('squarred_matrix'))
+
+        	st.write("## :green[Element wise Square]")
+            st.write(analysis_report.get('element_squarred_matrix'))
 
         except Exception as e:
             print(e)
