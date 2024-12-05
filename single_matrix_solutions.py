@@ -102,8 +102,7 @@ if st.session_state.done_btn_key == True:
                 "determinant": np.linalg.det(input_matrix),
                 "inverse": np.linalg.inv(input_matrix),
                 "norm": np.linalg.norm(input_matrix),
-                "trace": np.linalg.trace(input_matrix),
-                # results in the form of matrix
+                "trace": np.linalg.trace(input_matrix), # results in the form of matrix
                 "squarred_matrix": input_matrix @ input_matrix,
                 "transpose": input_matrix.transpose(),
                 "element_squarred_matrix": input_matrix ** 2
