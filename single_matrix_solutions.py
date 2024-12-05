@@ -119,7 +119,7 @@ if st.session_state.done_btn_key == True:
             st.write(analysis_report.get('transpose'))
             st.write(f"## :green[Square of matrix: ]")
             st.write(analysis_report.get('squarred_matrix'))
-        st.write(f"## :green[Element wise Square ]")
+            st.write(f"## :green[Element wise Square ]")
             st.write(analysis_report.get('element_squarred_matrix'))
 
         except Exception as e:
