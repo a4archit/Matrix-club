@@ -104,6 +104,7 @@ if st.session_state.done_btn_key == True:
             st.divider()
 
             # ---------------- Displaying outputs ----------------- #
+            # calculating and storing output values
             analysis_report = {
                 # basic information
                 "rank"          : np.linalg.matrix_rank(input_matrix),
