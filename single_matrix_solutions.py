@@ -1,6 +1,8 @@
 import streamlit as st
 import numpy as np
 
+
+
 # --------------------- Streamlit webpage designing --------------- #
 
 st.sidebar.title("About the developer")
