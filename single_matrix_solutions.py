@@ -160,6 +160,7 @@ if st.session_state.done_btn_key == True:
                     st.write(round_matrix(analysis_report.get('inverse')))
 
 
+        # handling exception
 
         except Exception as e:
             print(f"Error: {e}")
